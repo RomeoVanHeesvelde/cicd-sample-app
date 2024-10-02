@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+rm -r /var/lib/docker/volumes/jenkins-data/_data/workspace/BuildSampleApp/tempdir
+
 mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
