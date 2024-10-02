@@ -1,9 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-if [ -d "/var/lib/docker/volumes/jenkins-data/_data/workspace/BuildSampleApp/tempdir" ]; then
-    rm -r "/var/lib/docker/volumes/jenkins-data/_data/workspace/BuildSampleApp/tempdir"
-fi
+rm -r "/var/lib/docker/volumes/jenkins-data/_data/workspace/BuildSampleApp/tempdir"
 
 mkdir tempdir
 mkdir tempdir/templates
