@@ -3,8 +3,8 @@ set -euo pipefail
 
 DIR="/var/lib/docker/volumes/jenkins-data/_data/workspace/BuildSampleApp/tempdir"
 
-if [ -d "$DIR" ]; then
-    rm -r "$DIR"
+if [ -d $DIR ]; then
+    rm -r $DIR
 fi
 
 mkdir tempdir
